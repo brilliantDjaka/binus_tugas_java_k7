@@ -24,11 +24,11 @@ public class Main {
         for (int nomer = 0; nomer < jumlahPembelian; nomer++) {
             scanner.nextLine(); // clean scanner leftover
 
-            System.out.print("Nama Pesanan ke-%d : "+ (nomer + 1));
+            System.out.printf("Nama Pesanan ke-%d : ", (nomer + 1));
             String namaMakanan = scanner.nextLine();
-            System.out.print("Jumlah Pesanan : "+ (nomer + 1));
+            System.out.print("Jumlah Pesanan : ");
             int jumlahPesanan = scanner.nextInt();
-            System.out.print("Harga Pesanan : Rp."+ (nomer + 1));
+            System.out.print("Harga Pesanan : Rp.");
             int harga = scanner.nextInt();
             pesanan.tambahPesanan(nomer, namaMakanan, jumlahPesanan, harga);
         }
